@@ -1,72 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dominic personalsite</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You - AI Profit System</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- FontAwesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
+  <!-- META PIXEL -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;
+    n.push=n;
+    n.loaded=!0;
+    n.version='2.0';
+    n.queue=[];
+    t=b.createElement(e);
+    t.async=!0;
+    t.src=v;
+    s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}
+    (window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    // PUT YOUR PIXEL ID
+    fbq('init', 'YOUR_PIXEL_ID_HERE');
+
+    // Track page
+    fbq('track', 'PageView');
+
+    // Track purchase
+    fbq('track', 'Purchase', {
+      value: 47.00,
+      currency: 'USD'
+    });
+  </script>
+
+  <noscript>
+    <img
+      height="1"
+      width="1"
+      style="display:none"
+      src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID_HERE&ev=PageView&noscript=1"
+    />
+  </noscript>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      background: linear-gradient(135deg, #fff5f5 0%, #ffffff 100%);
+      overflow-x: hidden;
+    }
+
+    .fade-up {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.7s ease forwards;
+    }
+
+    .delay-1 {
+      animation-delay: 0.2s;
+    }
+
+    .delay-2 {
+      animation-delay: 0.4s;
+    }
+
+    .delay-3 {
+      animation-delay: 0.6s;
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .glow-btn {
+      box-shadow: 0 10px 30px rgba(220, 38, 38, 0.25);
+    }
+
+    .glow-btn:hover {
+      box-shadow: 0 15px 40px rgba(220, 38, 38, 0.35);
+    }
+  </style>
 </head>
 
-<body>
-  <table cellspacing="20">
-    <tr>
-      <td><img src="domskid.jpg" alt="Dominic profile "></td>
-      <td><h1>Dominic Otaigbe</h1>
-        <p><em>University <strong>Student</strong>.</em></p></td>
-    </tr>
-  </table>
- 
-<p>I am a student of university of benin. Am studing computer science and dreaming of being a senior software engeneer and even more.</p>
-<hr>
-<h3><strong>Books</strong></h3>
-<ul>
-  <li>Mathematics</li>
-  <li>English</li>
-  <li>Physics</li>
-  <li>chemistry</li>  
-</ul>
-<hr>
-<h3><strong>My Hobbies</strong></h3>
-<ol  type="a">
-  <li><a href="https://www.youtube.com/watch?v=gRGLSOMCeBs">Dancing</a></li>
-  <li><a href="https://www.youtube.com/watch?v=pksFAWc02D8">Singing</a></li>
-  <li>Party</li>
-</ol>
-<a href="Address.html">Contact Me</a>
-<hr>
-<h3>Work Experience</h3>
-<table>
-  <thead>
-    <th>Date</th>
-    <th>Work</th>
-  </thead>
-  <tbody>
-    <tr>
-      <td>2022</td>
-      <td>Beginner at web development</td>
-     </tr>
-     <tr>
-      <td>2023</td>
-      <td>Expert in web development</td>
-     </tr>
-  </tbody>
-  </table>
-  <hr>
-  <h3>Skills</h3>
-<table cellpsacing="10">
-        <tr>
-          <td>Dancing</td>
-          <td>⭐⭐⭐⭐⭐</td>
-          <td>Runing</td>
-          <td>⭐⭐⭐⭐</td>
-        </tr>
-        <tr>
-          <td>Singing</td>
-          <td>⭐⭐⭐</td>
-          <td>Web development</td>
-          <td>⭐⭐</td>
-        </tr>
-      </table>  
-   
+<body class="text-gray-800 min-h-screen flex flex-col">
+
+  <!-- HEADER -->
+  <header class="w-full border-b border-red-100 bg-white/80 backdrop-blur-sm sticky top-0 z-20">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+
+      <div class="flex items-center gap-2">
+        <div class="bg-red-600 text-white w-10 h-10 rounded-xl flex items-center justify-center shadow-md">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+        </div>
+
+        <h1 class="font-black text-lg sm:text-xl tracking-tight">
+          AI <span class="text-red-600">PROFIT</span>
+        </h1>
+      </div>
+
+      <div class="bg-green-50 text-green-700 border border-green-100 px-3 py-1.5 rounded-full text-xs sm:text-sm font-semibold">
+        <i class="fa-solid fa-circle-check mr-1"></i>
+        Order Confirmed
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="flex-1 flex items-center justify-center px-4 py-10 sm:py-16">
+
+    <div class="w-full max-w-2xl bg-white border border-gray-100 rounded-3xl shadow-2xl p-6 sm:p-10 md:p-14 text-center relative overflow-hidden">
+
+      <!-- Background Decoration -->
+      <div class="absolute top-0 right-0 w-40 h-40 bg-red-100 rounded-full blur-3xl opacity-50"></div>
+      <div class="absolute bottom-0 left-0 w-32 h-32 bg-red-50 rounded-full blur-2xl opacity-60"></div>
+
+      <!-- SUCCESS ICON -->
+      <div class="relative z-10 inline-flex items-center justify-center w-20 h-20 rounded-full bg-green-100 text-green-600 mb-6 fade-up">
+        <i class="fa-solid fa-check text-3xl"></i>
+      </div>
+
+      <!-- HEADLINE -->
+      <h2 class="relative z-10 text-3xl sm:text-4xl md:text-5xl font-black leading-tight text-gray-950 fade-up delay-1">
+        Thank You! <br class="hidden sm:block">
+        Your AI Blueprint Is Ready 🚀
+      </h2>
+
+      <!-- DESCRIPTION -->
+      <p class="relative z-10 mt-6 text-gray-600 text-base sm:text-lg leading-relaxed max-w-xl mx-auto fade-up delay-2">
+        Your payment was successful and your access has been confirmed.
+        You’re now one step closer to learning how to create professional
+        AI flyers and videos directly from your phone.
+      </p>
+
+      <!-- INFO BOX -->
+      <div class="relative z-10 mt-8 bg-red-50 border border-red-100 rounded-2xl p-5 text-left fade-up delay-2">
+
+        <div class="flex items-start gap-3">
+          <div class="text-red-600 mt-1">
+            <i class="fa-solid fa-envelope-open-text"></i>
+          </div>
+
+          <div>
+            <h3 class="font-bold text-gray-900 mb-1">
+              Check Your Email / WhatsApp
+            </h3>
+
+            <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
+              Your course access details and next steps will be sent to you shortly.
+              If you don’t see it, please check your spam or promotions folder.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CTA BUTTON -->
+      <div class="relative z-10 mt-10 fade-up delay-3">
+
+        <a
+          href="https://wa.me/"
+          class="inline-flex items-center justify-center gap-3 bg-red-600 hover:bg-red-700 text-white font-extrabold text-lg sm:text-xl px-8 py-4 rounded-full transition duration-300 hover:scale-105 glow-btn w-full sm:w-auto"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+          Join The Community
+        </a>
+
+      </div>
+
+      <!-- SMALL NOTE -->
+      <p class="relative z-10 mt-5 text-xs sm:text-sm text-gray-400 fade-up delay-3">
+        Need help? Contact support anytime.
+      </p>
+
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-gray-100 py-6 text-center px-4">
+
+    <div class="max-w-4xl mx-auto">
+      <p class="text-gray-500 text-sm">
+        © 2026 AI Profit System. All rights reserved.
+      </p>
+
+      <p class="mt-2 text-xs text-gray-400 max-w-md mx-auto leading-relaxed">
+        This transaction is secure. If you have any issues receiving your
+        access details, contact your support team immediately.
+      </p>
+    </div>
+
+  </footer>
+
 </body>
 </html>
